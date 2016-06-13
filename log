@@ -1,0 +1,11 @@
+INFO: loading config from /etc/shadowsocks.json
+2016-05-03 08:33:09 INFO     starting local at 127.0.0.1:1080
+2016-05-03 08:33:09 ERROR    [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/shadowsocks/local.py", line 55, in main
+    tcp_server = tcprelay.TCPRelay(config, dns_resolver, True)
+  File "/usr/lib/python2.7/dist-packages/shadowsocks/tcprelay.py", line 519, in __init__
+    server_socket.bind(sa)
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 98] Address already in use
